@@ -1,0 +1,151 @@
+/* The side navigation menu */
+.sidebar {
+  margin: -85px;
+  margin-top: 15px;
+  margin-left: 0px;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #1C3BE1;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.main{
+  margin-left:20%;
+}
+h1{
+  background: #cccaca;
+  margin-top: -10.56px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+h5{
+  margin-top: 13.48px;
+  font-size: 35px;
+  color:#fffafa;
+}
+body {
+    background: rgb(99, 39, 120)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif
+}
+
+.container {
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebf20f;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-gold-gold-low-profile-background-material-low-profilebackground-materialconference-image_69763.jpg);
+
+}
+
+.card {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: -20px;
+    width: 350px;
+    height: 470px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.card .info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1dede;
+    background-color: #e5e5e5
+}
+
+.card .info button {
+    height: 30px;
+    width: 80px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #000;
+    cursor: pointer;
+    text-transform: uppercase
+}
+
+.card .forms {
+    padding: 15px
+}
+
+.card .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px
+}
+
+.card .inputs span {
+    font-size: 12px
+}
+
+.card .inputs input {
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 17px;
+    box-shadow: none;
+    outline: none
+}
+
+.card .inputs input[type="text"][readonly] {
+    border: 2px solid rgba(0, 0, 0, 0)
+}

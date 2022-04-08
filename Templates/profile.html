@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="\static\profile.css">
+</head>
+<body>
+  <a href="/homepage"><h1>Donation Management System</h1></a>
+<!-- The sidebar -->
+<div class="sidebar">
+    <a class="active" href="#">Donor: {{fname}} {{lname}}</a>
+    <a href="/donordashboard">Donor Dash Board</a>
+    <a href="/donatenow">Donate Now</a>
+    <a href="/profile">Profile</a>
+    <a href="/homepage">Logout</a>
+  </div>
+  <div class="main">
+      <a href="/profile"><h5>My Profile</h5></a>
+<form action="/editprofile">
+    <div class="container" style="margin-top: 20px;">
+    <div class="card" style=" padding-top: 15px; padding-right: 40px; padding-left: 40px; padding-bottom: 50px;margin-top: 40px;">
+        <br>
+        <div class="info"> <span>Profile</span> <button id="savebutton">edit</button> </div>
+        <div class="inputs">
+        <label class="labels" for="1" style="margin-top: 10px;margin-bottom: 10px;">First Name:</label>
+        <input type="text" id="1" name="fname" readonly value="{{fname}}">
+        </div>
+        <div class="inputs">
+        <label class="labels" for="2" style="margin-top: 0px;margin-bottom: 10px;" >Last Name:</label>
+        <input type="text" id="2" name="lname" readonly value="{{lname}}">
+        </div>
+        <div class="inputs">
+        <label class="labels" for="3" style="margin-top: 0px;margin-bottom: 10px;">Email:</label>
+        <input type="email" id="3" name="email" readonly value="{{email}}">
+        </div>
+        <div class="inputs">
+        <label class="labels" for="4" style="margin-top: 0px;margin-bottom: 10px;">Contact:</label>
+        <input type="text" id="4" name="mobile" readonly value="{{mobile}}">
+        </div>
+        <div class="inputs">
+        <label class="labels" for="7" style="margin-top: 0px;margin-bottom: 10px;">Address:</label>
+        <input type="text" id="7" name="address" readonly value="{{address}}">
+        </div>
+           </div>
+    </div>
+</div>
+</form>
+  </div>
+</body>
+</html>

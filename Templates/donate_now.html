@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate Now</title>
+    <link rel="stylesheet" href="\static\donate_now.css">
+</head>
+<body>
+  <a href="/homepage"><h1>Donation Management System</h1></a>
+  <form action="readytodonate">
+        <h1>Donate Now</h1>
+        <br>
+      <div id="ready">
+          <a class="active" href="#">Donar</a>
+          <a href="/donordashboard">Donor Dash Board</a>
+          <a href="/donatenow">Donate Now</a>
+          <a href="/profile">Profile</a>
+          <a href="/homepage">Logout</a>
+      </div>
+      <label for="optionid"><b>Donation Name</label>
+      <br>
+      <select id="optionid" name="option" required>
+          <option value="Food Donation">Food Donation</option>
+          <option value="Cloth Donation">Cloth Donation</option>
+          <option value="Footwear Donation">Footwear Donation</option>
+          <option value="Book Donation">Book Donation</option>
+          <option value="Furniture Donation">Furniture Donation</option>
+          <option value="Vessel Donation">Vessel Donation</option>
+          <option value="other Donation">other Donation</option>
+      </select><br>
+        <label for="1" default="null">If Choosen Other Please Specify</label>
+        <br>
+        <textarea id="1" rows="3" name="ico" ></textarea>
+        <br>
+        <label for="2" >Donation Collection Area</label>
+        <textarea id="2" rows="3" name="dco" ></textarea>
+        <br>
+        <label for="3" >Enter city</label>
+        <textarea id="3" rows="3" name="city" ></textarea>
+        <br>
+        <label for="4" >Description Special Notes</label>
+        <textarea id="4" rows="3" name="dsn" ></textarea>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

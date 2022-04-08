@@ -1,0 +1,135 @@
+/* The side navigation menu */
+.sidebar {
+  margin: -85px;
+  margin-top: -8px;
+  margin-left: 0px;
+  padding: 0px;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #1C3BE1;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.main{
+  margin-left:20%;
+}
+.teen{
+  display: flex;
+  width: 80%;
+  margin-top: 8%;
+}
+#one{
+  height: 145px;
+  width: 346px;
+  position: relative;
+  border: 2px solid #0004ff;
+  background: #cccaca;
+  margin-left: -30px;
+  margin-right: -95px;
+  padding-left: 5px;
+}
+#two{
+  height: 145px;
+  width: 346px;
+  position: relative;
+  border: 2px solid #0004ff;
+  background: #cccaca;
+  margin-left: 114px;
+  margin-right: 18px;
+  padding-left: 5px;
+}
+#three{
+  height: 145px;
+  width: 346px;
+  position: relative;
+  border: 2px solid #0004ff;
+  background: #cccaca;
+  margin-right: -253px;
+  padding-left: 5px;
+}
+.do{
+  display:flex;
+  width: 80%;
+  margin-top:8%;
+}
+#four{
+  height: 145px;
+  width: 346px;
+  position: relative;
+  border: 2px solid #0004ff;
+  background: #cccaca;
+  margin-right: 141px;
+  margin-left: 49px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+}
+#five{
+  height: 145px;
+  width: 346px;
+  position: relative;
+  border: 2px solid #0004ff;
+  background: #cccaca;
+  margin-right: -253px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+}
+h1{
+  background: #cccaca;
+  margin-top: -10.56px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+body{
+  background-image: url(https://www.wpexplorer.com/wp-content/uploads/wordpress-best-donation-plugins.jpg);
+  
+}
+h5{
+  margin-top: 13.48px;
+  font-size: 35px;
+}

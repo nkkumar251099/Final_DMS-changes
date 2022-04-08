@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Option</title>
+    <link rel="stylesheet" href="/static/css/loginOptions.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Choose Login Option</h2>
+        <div class="price-row">
+            <div class="price-col">
+                <p>Donor</p>
+                <form action="/Donarverify" class="logform">
+                    <p class="fp">Email</p>
+                    <input type="email" placeholder="Enter Email" name="email" id="demail">
+                    <p class="fp">Password</p>
+                    <input type="password" placeholder="Enter password" name="psw" id="dpass">
+                    <button type="submit">Login</button>
+                    <a href="/Donarsignup">Create Account->></a>
+                </form>
+            </div>
+            <div class="price-col">
+                <p>Volunteer</p>
+                <form action="/dashboard" class="logform" method="post">
+                    <p class="fp">Email</p>
+                    <input type="email" placeholder="Enter Email" name="email" id="vemail">
+                    <p class="fp">Password</p>
+                    <input type="password" placeholder="Enter password" name="password" id="vpass">
+                    <button type="submit">Login</button>
+                </form>
+                    <form action="/signup-page"><button type="submit">Signup</button></form>
+
+            </div>
+            <div class="price-col">
+                <p>Admin</p>
+                <form action="/adminverify" class="logform">
+                    <p class="fp">Email</p>
+                    <input type="email" placeholder="Enter Email" name="email" id="aemail">
+                    <p class="fp">Password</p>
+                    <input type="password" placeholder="Enter password" name="psw" id="apass">
+                    <button type="submit">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

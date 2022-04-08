@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - Easy Tutorials YouTube Channel</title>
+    <link rel="stylesheet" href="/static/css/signup.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+
+    <form action="/vol-signed-up" method="post" enctype="multipart/form-data">
+      <h3>Sign-Up for Volunteer</h3>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name" name="user-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" id="contact-phone" name="user-phone-number" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="contact-email" name="user-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="text" placeholder="Enter password" id="contact-password" name="user-password" onkeyup="validatePassword()">
+        <span id="password-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Repeat-Password</label>
+        <input type="password" placeholder="Repeat password" id="repeat-password" onkeyup="validateRpassword()">
+        <span id="repeat-password-error"></span>
+      </div>
+
+      <div class="input-group">
+          <label>Upload Aadhar Image</label>
+          <input type="file" placeholder="Repeat password" name="user-aadhar-image" accept="image/*"  required>
+
+      </div>
+
+      <div class="input-group">
+          <label>Flast no. and Area</label>
+          <textarea rows="4" placeholder="Enter Flat no. and Area" name="user-address"></textarea>
+      </div>
+
+      <div class="input-group">
+        <label>City</label>
+        <input type="text" placeholder="Enter your City" name="city-name">
+      </div>
+
+      <div class="input-group">
+        <label>State</label>
+        <input type="text" placeholder="Enter your State" name="state-name">
+      </div>
+
+      <button onclick="return validateForm()" type="submit">Signup</button>
+      <span id="submit-error"></span>
+
+    </form>
+  </div>
+    <script src="/static/js/signup.js"></script>
+</body>
+</html>

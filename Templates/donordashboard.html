@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="\static\donordashboard.css">
+</head>
+<body>
+    <a href="/homepage"><h1>Donation Management System</h1></a>
+<!-- The sidebar -->
+<div class="sidebar">
+    <a class="active" href="#">Donar : {{fname}} {{lname}}</a>
+    <a href="/donordashboard">Donor Dash Board</a>
+    <a href="/donatenow">Donate Now</a>
+    <a href="/profile">Profile</a>
+    <a href="/homepage">Logout</a>
+  </div>
+  <div class="main">
+    <a href="/donordashboard"><h5>Donor Dashboard</h5></a>
+    <div class="teen">
+<div id="one"><h3>My Total Donations</h3>
+    <p>{{tdon}}</p>
+    <a href="">view details</a>
+</div>
+
+<div id="two"><h3>My Accepted Donations</h3>
+    <p>{{accdon}}</p>
+<a href="">view details</a>
+</div>
+<div id="three"><h3>My rejected Donations</h3>
+    <p>{{rejdon}}</p>
+<a href="">view details</a>
+</div>
+</div>
+<div class="do">
+<div id="four"><h3>My Pending Donations</h3>
+    <br>
+    <p>{{pendon}}</p>
+<a href="">view details</a>
+</div>
+<div id="five"><h3>My Successfully Delivered Donations</h3>
+    <br>
+    <p>{{sucdon}}</p>
+<a href="">view details</a>
+</div>
+</div>
+</div>
+</body>
+</html>
